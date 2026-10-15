@@ -35,6 +35,5 @@ build() {
 
 package() {
   meson install -C build --destdir "$pkgdir"
-  install -Dm644 $_pkgname-$pkgver/contrib/audacious.appdata.xml -t "$pkgdir/usr/share/metainfo"
   install -Dm644 $_pkgname-$pkgver/COPYING -t "$pkgdir/usr/share/licenses/$_pkgname"
 }
